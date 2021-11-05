@@ -1,0 +1,5 @@
+BEGIN
+	INPUT Dola
+		VND = Dola*23000
+	DiSPLAY VND
+END

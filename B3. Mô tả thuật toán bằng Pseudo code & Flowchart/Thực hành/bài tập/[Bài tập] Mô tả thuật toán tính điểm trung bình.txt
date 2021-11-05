@@ -1,7 +1,0 @@
-// nhập điểm toán , lý hóa. Yêu cầu tính điểm trung bình.
-
-BEGIN
-	INPUT math, physics, chemistry
-	average = (math + physics + chemistry) / 3
-	DISPLAY average
-END
