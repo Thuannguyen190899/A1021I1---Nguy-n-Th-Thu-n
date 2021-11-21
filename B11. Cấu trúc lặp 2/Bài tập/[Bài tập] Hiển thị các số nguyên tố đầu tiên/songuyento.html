@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên tố</title>
+</head>
+<body>
+    <script>
+        let num = prompt("Nhập vào số lượng số nguyên tố cần in ra");
+        let count = 0;
+        let n;
+        let j= 1;
+        let check;
+        while(count<num) {
+            check = true;
+            for (n = 2 ; n < j; n++) {
+                if (j % n == 0) {
+                    check = false;
+                }
+            }
+            if (check) {
+                document.write(j + "<br>");
+                count++;
+            }
+            j++
+        }
+
+    </script>
+</body>
+</html>

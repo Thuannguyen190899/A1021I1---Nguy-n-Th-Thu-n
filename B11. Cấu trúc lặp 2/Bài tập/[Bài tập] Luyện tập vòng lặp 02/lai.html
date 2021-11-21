@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lãi mẹ đẻ lãi con</title>
+</head>
+<body>
+    <script>
+        //Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.
+        let a = prompt("Nhập số tiền ban đầu");
+        let t = prompt ("Nhập số tháng cho vay");
+        let c = 0.1;
+        let i = a*(1+c)**t;
+        document.write ("Số tiền phải trả ngân hàng sau "+t+ " tháng là: "+i);
+    </script>
+</body>
+</html>
