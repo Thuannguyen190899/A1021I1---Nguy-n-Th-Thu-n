@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt</title>
+</head>
+<body>
+        <script>
+            let a = 0;
+            let b = 1;
+            let c= a + b;
+            let total = c + b;
+            count = 0;
+            document.write(a + "<br>"+b + '<br>');
+            for (; count < 18; count ++) {
+                document.write(c + "<br>");
+                a = b;
+                b = c;
+                c = a + b;
+                total = total + b;
+            }
+            document.write("Tổng 20 số là: " + total);
+
+        </script>
+</body>
+</html>
