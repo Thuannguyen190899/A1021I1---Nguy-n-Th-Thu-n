@@ -9,14 +9,14 @@
             let a = 0;
             let b = 1;
             let c= a + b;
-            let total = c + b;
+            let total = 1;
             count = 0;
-            document.write(a + "<br>"+b + '<br>');
+            document.write(a + "<br>" + b + "<br>");
             for (; count < 18; count ++) {
+                c = a + b;
                 document.write(c + "<br>");
                 a = b;
                 b = c;
-                c = a + b;
                 total = total + b;
             }
             document.write("Tổng 20 số là: " + total);
