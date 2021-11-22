@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Đoán Số</title>
+</head>
+<body>
+    <button onclick="start()">Chơi</button>
+    <script>
+        let count = 0
+        function start() {
+
+            if((3 - count) === 0){
+                alert('Ban da het luot choi')
+                return
+            }
+
+            let user = parseInt(prompt("nhập một số từ 1 đến 100"));
+
+            let auto = Math.floor(Math.random() * 100);
+
+            if (user === auto) {
+                alert("Chuc mung, ban da doan trung");
+                return;
+            }
+
+            if(user > auto ){
+                count = count + 1
+                alert("Lon hon, vui long nhap lai ( Ban con " + (3 - count) + " luot choi)" );
+
+                start()
+                return;
+            }
+
+            if(user < auto ){
+                count = count + 1
+                alert("Nho hon, vui long nhap lai ( Ban con " + (3 - count) + " luot choi)");
+                start()
+            }
+
+        }
+
+    </script>
+</body>
+</html>
