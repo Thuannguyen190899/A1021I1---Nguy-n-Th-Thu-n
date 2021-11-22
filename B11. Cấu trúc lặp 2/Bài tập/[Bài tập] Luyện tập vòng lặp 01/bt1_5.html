@@ -14,10 +14,11 @@
             document.write(a + "<br>" + b + "<br>");
             for (; count < 18; count ++) {
                 c = a + b;
+                total = total + c;
                 document.write(c + "<br>");
                 a = b;
                 b = c;
-                total = total + b;
+
             }
             document.write("Tổng 20 số là: " + total);
 
