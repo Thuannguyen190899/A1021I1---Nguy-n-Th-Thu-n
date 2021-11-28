@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+        }
+        #loveQuestion {
+            position: absolute;
+            left: 450px;
+            top: 230px;
+            font-size: 80px;
+        }
+        input {
+            width: 200px;
+            font-size: 30px;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+        }
+        #btnYes {
+            position: absolute;
+            left: 480px;
+            top: 450px;
+            background-color: #7bd806;
+            cursor: pointer;
+        }
+        #btnNo {
+            position: absolute;
+            left: 860px;
+            top: 450px;
+            background-color: #f4511e;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="loveQuestion"> Do you love me?</h1>
+    <input type="button" id="btnYes" value="YES" onclick="yesClick()" />
+    <input type="button" id="btnNo" value="NO" onmouseover="noHover()" style="position: absolute" />
+    <script>
+        function yesClick() {
+         alert( "I Love you so much <3 ");
+            }
+        function noHover() {
+            var x = Math.floor(Math.random() * window.innerWidth);
+            var y = Math.floor(Math.random() * window.innerHeight);
+        }
+        document.getElementById("btnNo").style.left = x + "px";
+        document.getElementById("btnNo").style.top = y + "px";
+        </script>
+</body>
+</html>

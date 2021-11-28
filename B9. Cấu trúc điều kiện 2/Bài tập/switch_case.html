@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="text" id="month" size="20">
+    <button type="button" onclick="clickByMonth()" >Tính số ngày</button><br>
+    <label id="demo"></label>
+</div>
+<script>
+    function clickByMonth(){
+        let month = parseInt(document.getElementById('month').value);
+        switch (month){
+            case 2:
+                document.getElementById('demo').innerHTML='Tháng 2 có 28,29 ngày';
+                break;
+            case 1:  case 3:  case 5:  case 7:  case 8:  case 10:  case 12:
+                document.getElementById('demo').innerHTML= 'Tháng '+ month + ' có 31 ngày'
+                break;
+            default:
+                document.getElementById('demo').innerHTML= 'Tháng '+ month + ' có 30 ngày'
+        }
+    }
+</script>
+</body>
+</html>
