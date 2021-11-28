@@ -6,16 +6,15 @@
 </head>
 <body>
     <script>
-        let num= parseInt(prompt("Enter a number: "));
+        let num;
         let total = 0;
         while( num != -1 ) {
             document.write(num, '<br>');
-            total += num;
             num= parseInt(prompt("Enter a number: "));
+            total += num;
         }
             alert("Tổng là: " + total);
             document.write("Tổng là: " + total);
-
     </script>
 </body>
 </html>

@@ -11,11 +11,12 @@
         let c = a + b;
         count = 0;
         document.write(a + "<br>"+b + '<br>');
-        for (; count <= 20; count ++) {
+        for (; count <= 20; ) {
             document.write(c + "<br>");
             a = b;
             b = c;
             c = a + b;
+            count ++;
         }
 
     </script>

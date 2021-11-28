@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ban phim</title>
+</head>
+<body onload="docReady()">​
+<form>
+    <img id="nobita" src="https://salt.tikicdn.com/cache/460x460/ts/product/55/7b/c9/78e01ebd06449b5a513d2b50a2111e5a.jpg" style="position:absolute;left:0; top:0;" height="100" width="80"/>
+    <br><br><br><br><br><br><br>
+    <input type="button" value="Move Up" onclick="upArrowPressed();" />
+    <input type="button" value="Move Right" onclick="rightArrowPressed();" />
+    <input type="button" value="Move Left" onclick="leftArrowPressed();" />
+    <input type="button" value="Move Down" onclick="downArrowPressed();" />
+
+
+</form>
+<script>
+
+    function upArrowPressed() {
+        let element = document.getElementById("nobita");
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+    }
+    function downArrowPressed() {
+        var element1 = document.getElementById("nobita");
+        element1.style.top = parseInt(element1.style.top) + 5 + 'px';
+    }
+    function leftArrowPressed() {
+        var element2 = document.getElementById("nobita");
+        element2.style.left = parseInt(element2.style.left) - 5 + 'px';
+    }
+    function rightArrowPressed() {
+        var element3 = document.getElementById("nobita");
+        element3.style.left = parseInt(element3.style.left) + 5 + 'px';
+
+    }
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 38:
+                upArrowPressed();
+                break;
+            case 40:
+                downArrowPressed();
+                break;
+        }
+    }
+    function docReady() {
+        window.addEventListener('keydown', moveSelection);
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+BEGIN
+	INPUT Diem
+	IF Diem >= 75 
+		DISPLAY Diem A
+		ELSE
+			IF 60 <= Diem < 75
+				DISPLAY Diem B
+				ELSE
+					IF 45 <= Diem < 60 
+						DISPLAY Diem C
+						ELSE
+							IF 35 <= Diem < 45  
+								DISPLAY Diem D
+								ELSE
+									DISPLAY Diem E
+							END IF
+					END IF
+			END IF
+	END IF
+END
+	
