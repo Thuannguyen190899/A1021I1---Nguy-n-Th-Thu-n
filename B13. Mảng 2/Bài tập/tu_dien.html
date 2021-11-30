@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <script>
+            let nhap = prompt("Nhập từ cần tìm kiếm:");
+            let arr1 = ["hello", "fine", "good", "do", "sleep", "eat"];
+            let arr2 = ["chào", "khỏe", "tốt", "làm", "ngủ", "ăn"];
+            let i = 0;
+            let pass = false;
+            while ( i< arr1.length) {
+                if (nhap == arr1[i]) {
+                    pass = true;
+                    console.log(arr2[i]);
+                }
+                i++;
+            }
+            if (!pass) {
+                alert ("Không tìm thấy");
+            }
+
+        </script>
+</body>
+</html>
