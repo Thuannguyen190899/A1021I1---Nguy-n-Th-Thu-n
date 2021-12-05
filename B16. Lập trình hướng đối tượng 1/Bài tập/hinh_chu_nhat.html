@@ -2,9 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<canvas id="DemoCanvas" width="500" height="600"></canvas>
+<script>
+    class Rectangle { constructor (dai, rong) {
+    this.dai = dai;
+    this.rong = rong;
+    }
+    getDai () {
+        return this.dai;
+    }
+    getRong () {
+        return this.rong;
+    }
+        setDai () {
+            this.dai = dai;
+        }
+        setRong () {
+            this.rong = rong;
+        }
+    }
+    let canh = new Rectangle (330, 100);
+    let dai = canh.getDai ();
+    let rong = canh.getRong ();
+    alert ("chu vi: " + (dai+rong)*2 + ", dien tich: " + dai*rong);
+    var canvas = document.getElementById("DemoCanvas");
+    if (canvas.getContext)
+    {
+        var ctx = canvas.getContext('2d');
+        var grd = ctx.createLinearGradient(20,0,330,0);
+        grd.addColorStop(0,"blue");
+        grd.addColorStop(1,"white");
+        ctx.fillStyle= grd;    // color of fill
+        ctx.fillRect(50, 40, 330, 100); // create rectangle
+    }
+
+
+</script>
 </body>
 </html>

@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Temperature</title>
 </head>
 <body>
-$END$
+    <script>
+        class Temperature { constructor (doC) {
+            this.doC = doC;
+        }
+        getDoC () {
+            return this.doC;
+        }
+        detDoC () {
+            this.doC = doC;
+        }
+        }
+        let temp = new Temperature (30);
+        let doC = temp.getDoC ();
+        alert ((doC*1.8 + 32) + " Do F, " + (doC + 273.15) +" Do K");
+    </script>
 </body>
 </html>
