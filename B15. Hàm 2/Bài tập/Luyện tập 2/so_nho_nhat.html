@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <script>
+            let a = prompt("Nhap vao 1 so nguyen");
+            let b = prompt("Nhap them 1 so nguyen");
+            let c = prompt("Nhap them 1 so nguyen nua");
+            function soNhoNhat() {
+                if (a>b&&a>c&&b<c || a>b&&c>a) {
+                    alert ('So nho nhat la: ' + b);
+                }
+                if (a>b&&a>c&&b>c || a<b&&b>c&&a>c) {
+                    alert ('So nho nhat la: ' + c);
+                }
+                if (a<c&&a<b || a<b&&b>c&&a<c) {
+                    alert ('So nho nhat la: ' + a);
+                }
+                return;
+            }
+            soNhoNhat();
+        </script>
+</body>
+</html>

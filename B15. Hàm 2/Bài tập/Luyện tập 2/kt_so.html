@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body onload = "check">
+<body onload = "checkNum">
     <script>
         function checkNum(val){
 
             if (!isNaN(val)){
-                return true;
+                return "ban vua nhap mot so";
             }
             else{
-                return false;
+                return "Ban vua nhap mot ki tu khac so";
             }
         }
         let value = prompt('Nhập vào bất kỳ');
